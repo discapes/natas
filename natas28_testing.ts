@@ -1,5 +1,4 @@
 import { randomBytes } from "crypto";
-import { exit } from "process";
 
 async function crypt(str) {
 	console.log("crypt", str);
@@ -49,6 +48,7 @@ for (let i = 1; i <= first.length; i++) {
 	else break;
 }
 
-console.log(leading.length);
-console.log(trailing.length);
-console.log(first.length);
+console.log("prefix len:", leading.length);
+console.log("suffix len:", trailing.length);
+console.log("w1 len:", first.length - leading.length - trailing.length);
+console.log("w2 len:", second.length - leading.length - trailing.length);
