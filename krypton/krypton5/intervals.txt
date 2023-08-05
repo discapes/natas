@@ -1,0 +1,8 @@
+❯ $((175-130))
+zsh: command not found: 45
+❯ $((82-19))
+zsh: command not found: 63
+❯ $((174-39))
+zsh: command not found: 135
+❯ $((83-20))
+zsh: command not found: 63
