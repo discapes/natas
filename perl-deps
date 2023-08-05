@@ -1,0 +1,5 @@
+perl-cgi
+perl-data-dump
+perl-list-utilsby
+perl-list-moreutils
+# see also https://archlinux.org/packages/extra-testing/any/perl-list-allutils/

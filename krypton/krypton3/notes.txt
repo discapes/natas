@@ -1,0 +1,17 @@
+monograms  bigrams  trigrams  quadgrams
+e 456      th 96    the 61    tion 14
+a 340      he 83    and 27    shaF 12
+t 301      er 68    ear 23    aFes 12
+s 257      es 63    her 22    Year 12
+o 246      re 54    his 19    esYe 12
+r 240      ar 54    ere 19    eare 12
+i 227      in 53    ing 16    oXth 12
+n 227      ed 52    ter 16    haFe 12
+h 210      ha 52    ion 15    sYea 11
+Z 132      ea 48    tha 15    Yher 11
+V 130      st 47    tio 14    FesY 11
+d 129      te 47    esY 14    Xthe 11
+M 86       an 46    sha 14    ther 9
+Y 84       on 44    edi 13    iYhe 8
+T 75       at 42    are 13    sZho 8
+X 71       ti 42    Yea 13    ZiYh 8
