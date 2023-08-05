@@ -1,0 +1,1 @@
+for some reason ls . | worked but ls | didn't

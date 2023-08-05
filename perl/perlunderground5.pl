@@ -1,5 +1,6 @@
 
 #!/usr/bin/perl
+# code roasted in perl underground 5, that i fixed partially
 # usage: own-kyx.pl narc1.txt
 #
 # this TEAM #PHRACK script will extract the email addresses 
@@ -36,14 +37,13 @@ while (<$if>) {
     say ":: Primary NS located at $nshost";
     sshcheq $nshost ;
 	apachecheq $nshost ;
-    
+
     say say;
 }
 
 sub sshcheq {
-# I think someone is confused about where his paren is supposed to go!
-	(my $sshost) = @_;
-        print ":: Testing $sshost for sshd version\n";
+	my $sshost = @_;
+     print ":: Testing $sshost for sshd version\n";
 # not a single good variable name in this script 
         $g = inet_aton($sshost); my $prot = 22;
         socket(S,PF_INET,SOCK_STREAM,getprotobyname('tcp')) or die "$!\n";
@@ -73,7 +73,7 @@ sub apachecheq {
         print ":: Testing $whost for Apache version\n";
         $g = inet_aton($whost); my $prot = 80;
         socket(S,PF_INET,SOCK_STREAM,getprotobyname('tcp')) or die "$!\n";
-        if(connect(S,pack "SnA4x8",2,$prot,$g)) {
+        if(connect(S,pack "z",2,$prot,$g)) {
                 my @in;
                 select(S); $|=1; print "HEAD / HTTP/1.0\r\n\r\n";
                 while(<S>){ push @in, $_;}
