@@ -27,11 +27,18 @@ main() {
 	esac
 	
 	[ ! -f ~/.ssh/otw_creds ] && touch ~/.ssh/otw_creds
-	local PASS=$( c1grep $1 ~/.ssh/otw_creds | tr -s $"\t" | cut -f2)
+	local PASS=$( c1grep "$1 " ~/.ssh/otw_creds | tr -s ' ' | cut -d' ' -f2)
 
 	if [ -z "$PASS" ]; then
 		read -p "Password for $1? " PASS
-		echo -e "$1\t$PASS" >> ~/.ssh/otw_creds
+		echo -e "$1 $PASS" >> ~/.ssh/otw_creds
+		# we cant redirect directly or the file will be emptied
+		# sponge from moreutils is also good for this
+		if command -v sort_otw; then
+			cat <<< "$(sort_otw ~/.ssh/otw_creds)" > ~/.ssh/otw_creds
+		fi
+	else
+		echo "Using pass $PASS";
 	fi
 	
 	export TERM=vt100
